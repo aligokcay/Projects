@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.2rem;
+}
+
+.calculator{
+    border: 3px solid grey;
+    border-radius: 5px;
+    width: 400px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calculator-input{
+    width: 92%;
+    font-size: 4rem;
+    height: 70px;
+    border: solid grey 1px;
+    border:solid grey 3px;
+    border-radius: 5px;
+    background-color: #292929;
+    color: white;
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin: 16px;
+    margin-bottom: 0;
+}
+
+button{
+    height: 50px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #c4c4c4;
+    font-size: 2.5rem;
+    color: #333;
+    background-color: transparent;
+}
+
+.calculator-keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 1fr -> Kalan yerleri orantılı dağıtması için.*/
+    grid-gap: 15px;
+    padding: 20px;
+}
+button:hover{
+    background-color: #eaeaea;
+}
+
+.operator, .delete{
+    color: #337cac;
+}
+
+.clear{
+    background-color: rgb(255, 54, 54);
+    border-color: #b0353a;
+    color: white;
+}
+
+.clear:hover{
+    color: black;
+    background-color: rgb(232, 3, 56);
+}
+
+.equal-sign{
+    background-color: #02a8db;
+    color: white;
+    grid-area: 3/4/6/5;
+    height: 100%;
+}
+ 
+.equal-sign:hover{
+    background-color: #0393be;
+}
